@@ -22,10 +22,31 @@
 
 #define BLOCK_BUFFER_SIZE    25
 
-// Pixy Block buffer // 
+// Pixy Block buffer //
 struct Block blocks[BLOCK_BUFFER_SIZE];
 
 static bool run_flag = true;
+
+//  int      i = 0;
+//  int      index;
+//  int      blocks_copied;
+//  int      pixy_init_status;
+//  char     buf[128];
+void printBlocks(int index, int blocks_copied , char buf[]){
+
+    for(index = 0; index != blocks_copied; ++index) {
+        blocks[index].print(buf);//saves the string "sig: %d x: %d y: %d width: %d height: %d" to buf
+        int sig = blocks[index].signature;//saves block's signature
+        //printf("  %s\n", buf); prints buff
+        if(sig == 6){
+            printf("Default Signature\n");
+        } else {
+            printf("Signature: %d\n", sig);//prints the block's signature
+        }
+    }
+
+}
+
 
 void handle_SIGINT(int unused)
 {
@@ -124,7 +145,7 @@ int main(int argc, char * argv[])
   while(run_flag)
   {
     // Wait for new blocks to be available //
-    while(!pixy_blocks_are_new() && run_flag); 
+    while(!pixy_blocks_are_new() && run_flag);
 
     // Get blocks from Pixy //
     blocks_copied = pixy_get_blocks(BLOCK_BUFFER_SIZE, &blocks[0]);
@@ -137,10 +158,7 @@ int main(int argc, char * argv[])
 
     // Display received blocks //
     printf("frame %d:\n", i);
-    for(index = 0; index != blocks_copied; ++index) {    
-       blocks[index].print(buf);
-       printf("  %s\n", buf);
-    }
+    printBlocks(index, blocks_copied,buf);
     i++;
   }
   pixy_close();

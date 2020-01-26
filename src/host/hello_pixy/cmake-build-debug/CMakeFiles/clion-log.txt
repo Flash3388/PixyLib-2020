@@ -1,0 +1,18 @@
+/home/guych15/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6015.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/guych15/dev/git/pixy/src/host/hello_pixy
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+lib LIBRARY_DIR-NOTFOUND
+inc INCLUDE_DIR-NOTFOUND
+CMake Error at cmake/Findlibpixyusb.cmake:54 (message):
+  Could not find libpixyusb
+Call Stack (most recent call first):
+  CMakeLists.txt:12 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/guych15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/CMakeFiles/CMakeOutput.log".

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hello_pixy"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_pixy">
+				<Option output="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/hello_pixy" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__LIBPIXY_VERSION__=&quot;0.4&quot;"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/src"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/include"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/../../common"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/libusb-1.0"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_pixy"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_pixy/fast">
+				<Option output="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/hello_pixy" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__LIBPIXY_VERSION__=&quot;0.4&quot;"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/src"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/include"/>
+					<Add directory="/home/thech15/dev/git/pixy/src/host/hello_pixy/../../common"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/libusb-1.0"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_pixy/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/thech15/dev/git/pixy/src/host/hello_pixy/hello_pixy.cpp">
+			<Option target="hello_pixy"/>
+		</Unit>
+		<Unit filename="/home/thech15/dev/git/pixy/src/host/hello_pixy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake/Findlibpixyusb.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/thech15/dev/git/pixy/src/host/hello_pixy/cmake/Findlibusb-1.0.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

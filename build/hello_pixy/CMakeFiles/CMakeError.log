@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_03443/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03443.dir/build.make CMakeFiles/cmTC_03443.dir/build
+make[1]: Entering directory '/home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_03443.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_03443.dir/CheckSymbolExists.cxx.o -c /home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_03443
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03443.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_03443.dir/CheckSymbolExists.cxx.o  -o cmTC_03443 
+CMakeFiles/cmTC_03443.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_03443.dir/build.make:97: recipe for target 'cmTC_03443' failed
+make[1]: *** [cmTC_03443] Error 1
+make[1]: Leaving directory '/home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_03443/fast' failed
+make: *** [cmTC_03443/fast] Error 2
+
+File /home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_502b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_502b5.dir/build.make CMakeFiles/cmTC_502b5.dir/build
+make[1]: Entering directory '/home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_502b5.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_502b5.dir/CheckFunctionExists.cxx.o -c /home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_502b5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_502b5.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_502b5.dir/CheckFunctionExists.cxx.o  -o cmTC_502b5 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_502b5.dir/build.make:97: recipe for target 'cmTC_502b5' failed
+make[1]: *** [cmTC_502b5] Error 1
+make[1]: Leaving directory '/home/guych15/dev/git/pixy/build/hello_pixy/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_502b5/fast' failed
+make: *** [cmTC_502b5/fast] Error 2
+
+
