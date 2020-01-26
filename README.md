@@ -1,25 +1,9 @@
-libpixyusb API Reference:
+# PixyLib-2020
 
-http://charmedlabs.github.io/pixy/index.html
-
-Pixy README
-
-This directory contains:
-
-
-/doc - this directory contains a doxygen configuration file for building doxygen documentation.
-
-/scripts - this directory contains scripts for building pixy software modules.
-
-/src/device - this directory contains code (firmware) that runs on the Pixy
-(CMUcam5) device.
-
-/src/host - this directory contains code that runs on the host computer.
-(Windows PC, Linux PC, Mac)
-
-/src/host/hello_pixy - this directory contains an example program that uses libpixyusb for communicating with Pixy.
-
-/src/host/libpixyusb - this directory contains the USB library for communicating with Pixy.
-
-/src/host/arduino - this directory contains the Arduino library for communicating with Pixy.
+1) install cmake
+2) install MinGW
+3) download pixy Git Rep - https://github.com/charmedlabs/pixy
+4) compile libpixyusb (search compile cmake with MinGW)
+5) create an example with uses pixy (Use "Hello Pixy" program for reference)
+6) create a code to track the Control Panel (The Color Wheel) rotations
 
